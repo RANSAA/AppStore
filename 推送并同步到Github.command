@@ -29,6 +29,6 @@ git submodule add git@github.com:RANSAA/AppStore.git childGit
 ## 3.推送到github
 # cd github
 cd childGit
-git add .
-git commit -m 'no message'
+# git add .
+# git commit -m 'no message'
 git push git@github.com:RANSAA/AppStore.git
