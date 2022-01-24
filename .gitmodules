@@ -1,0 +1,3 @@
+[submodule "AppStore"]
+	path = AppStore
+	url = git@github.com:RANSAA/AppStore.git
