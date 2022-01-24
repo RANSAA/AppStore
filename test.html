@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+
+.grid-container {
+  display: grid;
+  /*grid-template-columns: auto auto auto auto auto;*/
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  /*grid-template-rows: 250px;*/
+
+  background-color: #2196F3;
+  /*padding: 24px;*/
+  padding-top: 24px;
+  padding-left: 68px;
+  /*padding-right: 24px;*/
+
+/*  margin-right: 48px;
+  margin-left: 48px;*/
+
+  grid-gap: 24px;
+}
+
+
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+.city {
+float: left;
+/*margin: 5px;*/
+margin-bottom: 24px;
+/*padding: 15px;*/
+
+width: 250px;
+height: 250px;
+
+border: 1px solid black;
+align-content: center;
+/*text-align: center;*/
+border-radius: 35px;
+background-color: #8AC007;
+
+} 
+
+.city > h2{
+	text-align: center;
+}
+
+
+</style>
+</head>
+
+<body>
+
+	
+<div style="text-align:center;">
+<h1>App分发平台</h1>
+<h3>当前平台类型：<span id="deviceType" style="color: red;">123</span></h3>
+<br>
+</div>
+
+
+<div class="grid-container" >
+
+
+<a id="clickMe" href="app/2a59d996144c59cacab3fbe874816cc013cac322/ZhuGeKaBao-com.sayaDev.test/index.html"> 
+
+<div class="city" >
+<h2>a->href</h2>
+<p>London is the capital city of England.</p>
+<p>It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+
+</div>
+</a>
+
+<div class="city" onclick="window.open('app/2a59d996144c59cacab3fbe874816cc013cac322/ZhuGeKaBao-com.sayaDev.test/index.html','_self')" style="background-image: url(app/2a59d996144c59cacab3fbe874816cc013cac322/ZhuGeKaBao-com.sayaDev.test/Logo512x512.png); background-size: 250px 250px;" >
+<h2>onclick</h2>
+<!-- <p></p>
+<p></p> -->
+
+<div style="text-align:center; margin-top: 162px; color: white;">
+  诸葛卡包
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="city" >
+<h2>London</h2>
+<p>London is the capital city of England.</p>
+<p>It is the most populous city in the United Kingdom,
+with a metropolitan area of over 13 million inhabitants.</p>
+
+</div>
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital and most populous city of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and the most populous metropolitan area in the world.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and the most populous metropolitan area in the world.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and the most populous metropolitan area in the world.</p>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+    
+        //获取设备类型
+        function getDeviceType(){
+            let agent = navigator.userAgent.toLowerCase();
+            if (/windows/.test(agent)) {
+                return 'windows';
+            } else if (/iphone|ipod/.test(agent) && /mobile/.test(agent)) {
+                return 'iphone';
+            } else if (/ipad/.test(agent) && /mobile/.test(agent)) {
+                return 'ipad';
+            } else if (/android/.test(agent) && /mobile/.test(agent)) {
+                return 'android';
+            } else if (/linux/.test(agent)) {
+            return 'linux';
+            } else if (/mac/.test(agent)) {
+                return 'mac';
+            } else {
+                return 'other';
+            }
+        }
+
+        
+
+
+        //js赋值方式
+        document.getElementById("deviceType").innerHTML= getDeviceType();
+        // document.getElementById("deviceType").innerText= getDeviceType();
+        // document.getElementById("deviceType").value= getDeviceType();
+
+        //jquary赋值方式
+        // $('#deviceType').html(getDeviceType())
+
+</script>
