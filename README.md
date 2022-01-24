@@ -21,6 +21,9 @@ iOS App 应用分发测试
 ```
 
 
+### 主项目地址
+[腾讯Coding](https://fir-im.coding.net/public/fir.im/AppStore/git/files)
+
 ### 应用分发网址
 
 [Github](https://github.com/RANSAA/AppStore)：	[https://ransaa.github.io/AppStore/index.html](https://ransaa.github.io/AppStore/index.html)

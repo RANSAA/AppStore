@@ -1,0 +1,6 @@
+当前仓库包含了子仓库：childGit
+
+如果是新clone项目需要注意事项：
+                        1. 删除 .gitmodules
+                        2. 删除 childGit
+                        3. 使用【推送并同步到Github.command】文件同步
