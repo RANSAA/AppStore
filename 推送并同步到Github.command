@@ -18,7 +18,7 @@ git push origin master
 
 
 
-git submodule add <git@github.com:RANSAA/AppStore.git> github
+git submodule add git@github.com:RANSAA/AppStore.git github
 
 
 
