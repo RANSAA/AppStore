@@ -26,7 +26,8 @@ git submodule add git@github.com:RANSAA/AppStore.git
 ## 1.先拷贝相关HTML资源到github目录(不需要拷贝应用包)
 ## 2.进入github目录
 ## 3.推送到github
-cd github
+# cd github
+cd AppStore
 git add .
-git commit -m 'no message'
+git commit -m 'no message-github'
 git push git@github.com:RANSAA/AppStore.git
