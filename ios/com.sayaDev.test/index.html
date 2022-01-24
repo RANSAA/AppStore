@@ -19,7 +19,8 @@ a{
         <br/>
         <img src="Logo512x512.png" width="200" height="200">
         <br/>
-        <p> 诸葛卡包 </p>
+        <p style="color: red;"> 诸葛卡包 </p>
+        <p>当前平台类型：<span id="deviceType" style="color: red;">123</span></p>
         <br/>
     </div>
     
@@ -48,3 +49,39 @@ a{
 <body>
 </body>
 </html>
+
+
+<script>
+    
+        //获取设备类型
+        function getDeviceType(){
+            let agent = navigator.userAgent.toLowerCase();
+            if (/windows/.test(agent)) {
+                return 'windows';
+            } else if (/iphone|ipod/.test(agent) && /mobile/.test(agent)) {
+                return 'iphone';
+            } else if (/ipad/.test(agent) && /mobile/.test(agent)) {
+                return 'ipad';
+            } else if (/android/.test(agent) && /mobile/.test(agent)) {
+                return 'android';
+            } else if (/linux/.test(agent)) {
+            return 'linux';
+            } else if (/mac/.test(agent)) {
+                return 'mac';
+            } else {
+                return 'other';
+            }
+        }
+
+        
+
+
+        //js赋值方式
+        document.getElementById("deviceType").innerHTML= getDeviceType();
+        // document.getElementById("deviceType").innerText= getDeviceType();
+        // document.getElementById("deviceType").value= getDeviceType();
+
+        //jquary赋值方式
+        // $('#deviceType').html(getDeviceType())
+
+</script>
