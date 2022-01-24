@@ -13,8 +13,7 @@ fi
 # 推送到腾讯coding
 git add .
 git commit -m 'no message'
-# git push origin master
-git push https://e.coding.net/fir-im/fir.im/AppStore.git origin master
+git push origin master
 
 
 

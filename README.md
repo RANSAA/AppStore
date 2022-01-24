@@ -25,7 +25,7 @@ iOS App 应用分发测试
 
 [Github](https://github.com/RANSAA/AppStore)：	[https://ransaa.github.io/AppStore/index.html](https://ransaa.github.io/AppStore/index.html)
 
-[腾讯](https://fir-im.coding.net/public/fir.im/AppStore/git/files)：	[https://fir-im.coding.net/p/fir.im/d/AppStore/git/raw/master/index.html](https://fir-im.coding.net/p/fir.im/d/AppStore/git/raw/master/index.html)
+[腾讯](https://fir-im.coding.net/public/fir.im/AppStore/git/files)：		[https://fir-im.coding.net/p/fir.im/d/AppStore/git/raw/master/index.html](https://fir-im.coding.net/p/fir.im/d/AppStore/git/raw/master/index.html)
 
 
 
