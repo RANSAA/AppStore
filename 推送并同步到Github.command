@@ -18,6 +18,10 @@ git push origin master
 
 
 
+git submodule add <git@github.com:RANSAA/AppStore.git> github
+
+
+
 ## 同步到github
 ## 1.先拷贝相关HTML资源到github目录(不需要拷贝应用包)
 ## 2.进入github目录
