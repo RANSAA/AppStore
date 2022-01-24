@@ -18,8 +18,9 @@ git push origin master
 
 
 
-# git submodule add git@github.com:RANSAA/AppStore.git github
-git submodule add git@github.com:RANSAA/AppStore.git
+# 添加一个子git用于存储HTML资源，
+# childGit：子仓库目录
+git submodule add git@github.com:RANSAA/AppStore.git childGit
 
 
 ## 同步到github
@@ -27,7 +28,7 @@ git submodule add git@github.com:RANSAA/AppStore.git
 ## 2.进入github目录
 ## 3.推送到github
 # cd github
-cd AppStore
+cd childGit
 git add .
-git commit -m 'no message-github'
+git commit -m 'no message'
 git push git@github.com:RANSAA/AppStore.git
