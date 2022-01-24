@@ -1,3 +1,0 @@
-[submodule "childGit"]
-	path = childGit
-	url = git@github.com:RANSAA/AppStore.git
