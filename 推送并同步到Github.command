@@ -20,7 +20,7 @@ git push origin master
 
 # 添加一个子git用于存储HTML资源，
 # childGit：子仓库目录
-git submodule add git@github.com:RANSAA/AppStore.git childGit
+git submodule add git@github.com:RANSAA/AppStore.git sync
 
 
 ## 同步到github
