@@ -9,6 +9,8 @@ iOS App 应用分发测试
 
 ### 应用分发网址
 
+[4everland 静态网页托管](https://www.4everland.org/)：	[https://appstore.4everland.app/Home.html](https://appstore.4everland.app/Home.html)
+
 [Github](https://github.com/RANSAA/AppStore.git)：	[https://ransaa.github.io/AppStore/Home.html](https://ransaa.github.io/AppStore/Home.html)
 
 [腾讯](https://fir-im.coding.net/p/fir.im/d/AppStore/git)：			[https://fir-im.coding.net/p/fir.im/d/AppStore/git/raw/master/index.html](https://fir-im.coding.net/p/fir.im/d/AppStore/git/raw/master/index.html)
