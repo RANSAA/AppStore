@@ -68,4 +68,5 @@ manifest配置参考路径： https://www.jianshu.com/p/1f88cc66809e
 
 
 
-
+## 推荐一个仿fir.im的开源项目
+[intranet_app_manager](https://github.com/yizhaorong/intranet_app_manager)
