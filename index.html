@@ -8,21 +8,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="white">
 <meta name="format-detection" content="telephone=no">
 <title>App分发平台</title>
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<link href="splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-<link href="splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-
-
-
 <link rel="icon" type="image/x-icon" href="src/images/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="src/css/index.css">
 <script type="text/javascript" src="src/js/device.js"></script>
@@ -42,6 +27,46 @@
 <!-- grid开始 -->
 <div class="home-grid-container" >
     <!-- 一个item开始 -->
+    <div class="home-grid-item ">
+        <!-- 右上角图标 -->
+        <div style="height: 48px;">
+            <img name="appIconType" src="src/images/android.png"  class="top-img-right">
+        </div>
+
+        <div class="margin48">
+            <!-- logo icon -->
+             <div class="home-nav-logo-height">
+                <img src="app/android/com.jibaoge.jibaogeapp/Logo512.png" class="size100">
+            </div>
+            <!-- app name -->
+            <div class="home-nav-name-height">
+                <img src="src/images/user.png" class="size16">
+                <span>饭团影院</span>
+            </div>
+            <!-- text info -->
+            <div class="home-nav-line-height">
+                <span class="home-line-label ">包名：</span>
+                <span class="home-line-text">com.jibaoge.jibaogeapp</span>
+            </div>
+            <div class="home-nav-line-height">
+                <span class="home-line-label ">版本：</span>
+                <span class="home-line-text">2.1.4 ( Build 2604 )</span>
+            </div>
+            <div class="home-nav-line-height">
+                <span class="home-line-label ">更新时间：</span>
+                <span class="home-line-text">2022-05-23 18:41:08</span>
+            </div>
+            <!-- button -->
+            <div style="margin-top:62px;">
+                <div>
+                    <button type="button" onclick="window.open('app/android/com.jibaoge.jibaogeapp/list.html')" class ="home-button-left">列表</button>
+                    <button type="button" onclick="window.open('app/android/com.jibaoge.jibaogeapp/20220523184108_2.1.4_2604.html')" class ="home-button-right">预览</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 一个item结束 -->    <!-- 一个item开始 -->
     <div class="home-grid-item ">
         <!-- 右上角图标 -->
         <div style="height: 48px;">
@@ -168,20 +193,4 @@
 </html>
 <script>
     document.getElementById("deviceType").innerHTML= getDeviceName();
-</script>
-
-<script>
-    if(("standalone" in window.navigator) && window.navigator.standalone){
-        var noddy, remotes = false;
-        document.addEventListener('click', function(event) {
-            noddy = event.target;
-            while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
-                noddy = noddy.parentNode;
-            }
-            if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes)){
-                event.preventDefault();
-                document.location.href = noddy.href;
-            }
-        },false);
-    }
 </script>
