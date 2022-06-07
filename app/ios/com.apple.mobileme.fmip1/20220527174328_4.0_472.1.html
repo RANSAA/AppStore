@@ -18,7 +18,7 @@
 <img src="../../../src/images/download_pattern_left.png" class="pattern left">
 <img src="../../../src/images/download_pattern_right.png" class="pattern right">
 
-<div style="text-align: center; margin-top: 80px">
+<div id="appInfo" style="text-align: center; margin-top: 80px">
 
     <!-- app icon, name -->
     <div>
@@ -28,7 +28,7 @@
     <div style="margin-top: 36px; font-size: 22px; color: #333333; line-height: 36px;">
         <div>
             <img id="appTypeIconPath" class="size36-details">
-            <span id="appName"> 诸葛卡包</span>
+            <span id="appName">  App Name  </span>
         </div>
     </div>
 
@@ -36,9 +36,9 @@
     <div style="font-size: 14px; color: #788090; margin-top: 20px;">
         <div>
             <span >版本:</span>
-            <span id="appVersion">2.8.8 ( Build 288 )</span>
+            <span id="appVersion"> 1.0 </span>
             <span >&emsp; 大小:</span>
-            <span id="appSize">15.6 MB</span>
+            <span id="appSize">   1M  </span>
         </div>
         <div>
             <span >更新时间:</span>
@@ -133,8 +133,11 @@
                 showWithID("btn4")
             }
         }else{
-            if (devideType == "android") {
-            showWithID("btn0")
+            // if (devideType == "android") {
+            //     showWithID("btn0")
+            // }
+            if (devideType != "ios") {
+                showWithID("btn0")
             }
         }
      }
@@ -167,15 +170,17 @@
         window.addEventListener("resize", resize);
         dispalyButton()
 
-         //当前网页二维码
-        appDownMakeQRCode(window.location.href)
+        //当前网页二维码
+        buildQRCodeWithImg(window.location.href, "appIcon")
         console.log(window.location.href)
         //root path
         // console.log(window.location.origin)
 
 
+        showWithID("appInfo")
     }
 
+    hiddenWithID("appInfo")
 
     window.onload = function(){
        load()
@@ -197,11 +202,10 @@
     let appSize = "5.77 MB"
     let appUpdateTime = "2022-05-27 17:43:28"
 
-    //app url
-    //ios "itms-services://?action=download-manifest&amp;url=https%3A%2F%2F127.0.0.1%3A8080%2Fm%2Fff8080817ee744b8017ee746e5810011"
+    //app install url
     let installURL = "itms-services://?action=download-manifest&url=https://fir-im.coding.net/p/fir.im/d/AppStore/git/raw/master/app/ios/com.apple.mobileme.fmip1/20220527174328_4.0_472.1_manifest.plist"
-
 
     //动态记入设备列表
     let deivces = ""
+
 </script>
